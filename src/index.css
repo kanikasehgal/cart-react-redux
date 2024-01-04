@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cart_quantity{
+  display: flex;
+}
+
+.cart_quantity span{
+  padding:5px;
+  border-style: groove;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  padding-left:0px;
+  background-color: rgb(67, 50, 193);
+}
+
+.flex-container ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top:0px;
+}
+nav {
+  position: sticky;
+  margin:0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.flex-container li{
+  display: block;
+  padding: 8px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 20%;
+  
+  display: flex; /* so child elements can use flexbox stuff too! */
+  flex-direction: column;
+}
+.product-image{
+  max-width: 50px;
+}
+
+.flex-container li:first-child {
+  margin-right: auto;
+}
+
+.flex-container li:last-child {
+ margin-left: auto;
+}
+
+li{
+  display: block;
+}
+.cartTotal{
+  font-size: 14px;
+  background: #fff;
+  color: black;
+  vertical-align: top;
+  border-radius:40%;
+  margin-bottom: 8px;
+}
+
+.flex-container :first-child {
+  margin-right: auto;
+}
+
+.flex-container :last-child {
+ margin-left: auto;
+}
